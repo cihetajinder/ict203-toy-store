@@ -19,51 +19,63 @@
 
     <main>
 
-       <section>
-    <h2>Our Products</h2>
+        <section>
 
-    <div class="product-grid">
+            <h2>Our Products</h2>
 
-        <article>
-            <img src="toycar.jpg" alt="Red toy car" width="200">
-            <h3>Toy Car</h3>
-            <p>A fun toy car for children.</p>
-            <p>Price: $15.99</p>
-            <button>Buy Now</button>
-        </article>
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="cars">Cars</button>
+                <button data-filter="soft">Soft Toys</button>
+                <button data-filter="building">Building Toys</button>
+                <button data-filter="robots">Robots</button>
+            </div>
 
-        <article>
-            <img src="teddy.jpg" alt="Brown teddy bear" width="200">
-            <h3>Teddy Bear</h3>
-            <p>A soft teddy bear for children.</p>
-            <p>Price: $19.99</p>
-            <button>Buy Now</button>
-        </article>
+            <div class="product-grid">
 
-        <article>
-            <img src="blocks.jpg" alt="Colourful building blocks" width="200">
-            <h3>Building Blocks</h3>
-            <p>Colourful blocks for creative play.</p>
-            <p>Price: $24.99</p>
-            <button>Buy Now</button>
-        </article>
+                <article class="product-card" data-category="cars">
+                    <img src="toycar.jpg" alt="Red toy car" width="200">
+                    <h3>Toy Car</h3>
+                    <p>A fun toy car for children.</p>
+                    <p>Price: $15.99</p>
+                    <button>Buy Now</button>
+                </article>
 
-        <article>
-            <img src="robot.jpg" alt="Toy robot" width="200">
-            <h3>Toy Robot</h3>
-            <p>A fun robot toy for young children.</p>
-            <p>Price: $29.99</p>
-            <button>Buy Now</button>
-        </article>
+                <article class="product-card" data-category="soft">
+                    <img src="teddy.jpg" alt="Brown teddy bear" width="200">
+                    <h3>Teddy Bear</h3>
+                    <p>A soft teddy bear for children.</p>
+                    <p>Price: $19.99</p>
+                    <button>Buy Now</button>
+                </article>
 
-    </div>
-</section>
+                <article class="product-card" data-category="building">
+                    <img src="blocks.jpg" alt="Colourful building blocks" width="200">
+                    <h3>Building Blocks</h3>
+                    <p>Colourful blocks for creative play.</p>
+                    <p>Price: $24.99</p>
+                    <button>Buy Now</button>
+                </article>
+
+                <article class="product-card" data-category="robots">
+                    <img src="robot.jpg" alt="Toy robot" width="200">
+                    <h3>Toy Robot</h3>
+                    <p>A fun robot toy for young children.</p>
+                    <p>Price: $29.99</p>
+                    <button>Buy Now</button>
+                </article>
+
+            </div>
+
+        </section>
 
     </main>
 
     <footer>
         <p>&copy; 2026 Happy Toys</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
