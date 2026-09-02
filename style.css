@@ -170,3 +170,80 @@ article img {
     height: auto;
     border-radius: 8px;
 }
+.menu-button {
+    display: block;
+    margin: 10px auto;
+    background-color: white;
+    color: #6c63ff;
+}
+
+nav {
+    display: none;
+}
+
+nav.show-menu {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+}
+
+
+/* Keyboard focus */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #ffcc00;
+}
+
+
+/* Form message */
+
+#formMessage {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Small animation */
+
+article {
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Tablet and desktop */
+
+@media (min-width: 768px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+}
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode article,
+.dark-mode form {
+    background-color: #333;
+    color: white;
+}
